@@ -9,7 +9,6 @@ SEELE:
 cd && cd seele/build  && pm2 stop '0' && pm2 start --name 'shard1' ./node -- start -c node1.json --threads 8
 
 MICROBITCOIN
-#! /bin/bash
-cd && sudo rm -rf cpuminer-opt && git clone https://github.com/JayDDee/cpuminer-opt/ && cd cpuminer-opt && ./build.sh && ./cpuminer -a power2b -o stratum+tcp://pool.mbc.52hash.com:3033 -u MiM9hQFGdb5FLZwxEXcJHqXGnMQN6v2ePi -t 7
+cd && sudo rm -rf cpuminer-opt && git clone https://github.com/JayDDee/cpuminer-opt/ && cd cpuminer-opt && ./build.sh && ./cpuminer -a power2b -o stratum+tcp://stratum-na.rplant.xyz:7022 -u MiM9hQFGdb5FLZwxEXcJHqXGnMQN6v2ePi -t 7
 
 BLUR:
